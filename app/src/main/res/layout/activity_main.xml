@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:id="@+id/container">
+    android:id="@+id/container"
+    android:background="#96E4F0">
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -14,10 +15,11 @@
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            app:title="Hola"
+            android:layout_height="65dp"
+            app:title="appFragments"
+            app:titleTextColor="#FFFF"
             app:menu="@menu/menu"
-            style="@style/Widget.MaterialComponents.Toolbar.Primary"
+            android:background="#1B2D55"
             />
 
     </com.google.android.material.appbar.AppBarLayout>

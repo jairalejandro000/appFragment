@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity  {
     public boolean onOptionsItemSelected(@NonNull MenuItem item){
         switch (item.getItemId()) {
             case R.id.jair:
-                Toast.makeText(this, "jairrrrr", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Login_fragment", Toast.LENGTH_SHORT).show();
                 getSupportFragmentManager()
                         .beginTransaction()
                         .replace(R.id.container, new LoginfragmentActivity())
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity  {
                         .commit();
                 break;
             case R.id.ariana:
-                Toast.makeText(this, "arianaaa", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Post_fragment", Toast.LENGTH_SHORT).show();
                 getSupportFragmentManager()
                         .beginTransaction()
                         .replace(R.id.container, new Homefragment())
