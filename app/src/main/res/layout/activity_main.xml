@@ -6,10 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:id="@+id/container">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="115dp"
         >
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:expandedTitleMarginStart="72dp"
+            app:expandedTitleMarginBottom="28dp"
+            app:expandedTitleTextAppearance="@style/TextAppearance.App.CollapsingToolbar.Expanded"
+            app:collapsedTitleTextAppearance="@style/TextAppearance.App.CollapsingToolbar.Collapsed">
 
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
@@ -17,11 +27,13 @@
             android:layout_height="?attr/actionBarSize"
             app:title="Hola"
             app:menu="@menu/menu"
+            android:elevation="0dp"
             style="@style/Widget.MaterialComponents.Toolbar.Primary"
             />
 
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
     </com.google.android.material.appbar.AppBarLayout>
-
-
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 </FrameLayout>
