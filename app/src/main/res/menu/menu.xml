@@ -8,7 +8,7 @@
         app:showAsAction="ifRoom"/>
     <item
         android:title="Ariana"
-        android:icon="@drawable/ic_launcher_back"
+        android:icon="@drawable/ic_crear_foreground"
         android:id="@+id/ariana"
         app:showAsAction="ifRoom"/>
 </menu>

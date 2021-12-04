@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -35,19 +36,19 @@ public class MainActivity extends AppCompatActivity  {
         switch (item.getItemId()) {
             case R.id.jair:
                 Toast.makeText(this, "jairrrrr", Toast.LENGTH_SHORT).show();
-                /*getSupportFragmentManager()
+                getSupportFragmentManager()
                         .beginTransaction()
                         .replace(R.id.container, new LoginfragmentActivity())
                         .addToBackStack(null)
-                        .commit();*/
+                        .commit();
                 break;
             case R.id.ariana:
                 Toast.makeText(this, "arianaaa", Toast.LENGTH_SHORT).show();
-                /*getSupportFragmentManager()
+                getSupportFragmentManager()
                         .beginTransaction()
                         .replace(R.id.container, new Homefragment())
                         .addToBackStack(null)
-                        .commit();*/
+                        .commit();
                 break;
         }
         return super.onOptionsItemSelected(item);
